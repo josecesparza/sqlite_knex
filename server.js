@@ -66,7 +66,7 @@ server.put('/cars/:id', async (req, res) => {
     }
 });
 
-server.delete('cars:id', async (req, res) => {
+server.delete('/cars/:id', async (req, res) => {
     try {
         console.log('inside delete');
         const cars = await dbConfig.remove(req.params.id)
